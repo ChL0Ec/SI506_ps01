@@ -30,8 +30,7 @@ print(f"all_lower: {hopcat_all_lower}")
 jerk_pit_all_upper = jerk_pit.upper()
 print(f"all_upper: {jerk_pit_all_upper}")
 
-madras_masala_lower = madras_masala.lower()
-madras_masala_count_m = madras_masala_lower.count("m")
+madras_masala_count_m = madras_masala.count("m")
 print(f"number of letter m: {madras_masala_count_m}")
 
 has_diner = fleetwood_diner.endswith("Diner")
@@ -73,21 +72,7 @@ print(f"number of restaurants: {num_restaurants}")
 # PROBLEM 04
 print("\nPROBLEM 04")
 
-plainCheesePizza = 18.99
-garlicKnots = 6.99
-soda = 7
-oreoCookieShake = 10.49
-whitePizza = 22.25
-mozzarellaSticks = 17.99
-
-total_price = (
-    4 * plainCheesePizza
-    + 5 * garlicKnots
-    + 2 * soda
-    + 5 * oreoCookieShake
-    + whitePizza
-    + 2 * mozzarellaSticks
-)
+total_price = (4 * 18.99 + 5 * 6.99 + 2 * 7 + 5 * 10.49 + 22.25 + 2 * 17.99)
 print(f"total price: {total_price}")
 
 total_bill = total_price * (1 + 0.06) + total_price * 0.15
@@ -97,10 +82,10 @@ each_pay = total_bill / 7
 print(f"each person pays: {each_pay}")
 
 # PROBLEM 05
-print(f"\n Someone said '{updated_comment}' on Yelp for the restaurant {jerk_pit_all_upper}.")
+print(f"Someone said '{updated_comment}' on Yelp for the restaurant {jerk_pit_all_upper}.")
 
 # PROBLEM 06
-restaurants_multiline = """Frita Batidos
+print("""Frita Batidos
 Zingerman's Delicatessen
 New York Pizza Depot
 Hopcat
@@ -109,12 +94,9 @@ Tomukun Noodle Bar
 Jamaican Jerk Pit
 Mama Satto
 Hola Seoul
-halimar
+Shalimar
 Cottage Inn Pizza
-Madras Masala
-"""
-
-print(f"\n{restaurants_multiline}")
+Madras Masala""")
 
 
 # END PROBLEM SET
